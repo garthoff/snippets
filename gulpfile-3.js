@@ -31,7 +31,7 @@ gulp.task('compile-style', function()
 		.pipe( sourcemaps.init() )
 		.pipe( sass({
 			errorLogToConsole: true,
-			outputStyle: 'compresses'
+			outputStyle: 'compressed'
 		}) )
 		.on( 'error', console.error.bind( console ) )
 		.pipe( autoprefixer({
