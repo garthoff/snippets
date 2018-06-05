@@ -19,6 +19,6 @@ gulp.task('compile-style', function()
 			outputStyle: 'compresses'
 		}) )
 		.on( 'error', console.error.bind( console ) )
-		.pipe( rename( { suffic: '.min' } ) )
+		.pipe( rename( { suffix: '.min' } ) )
 		.pipe( gulp.dest( styleDST ) );
 });
