@@ -16,7 +16,7 @@ gulp.task('compile-style', function()
 	gulp.src( styleSRC )
 		.pipe( sass({
 			errorLogToConsole: true,
-			outputStyle: 'compresses'
+			outputStyle: 'compressed'
 		}) )
 		.on( 'error', console.error.bind( console ) )
 		.pipe( rename( { suffix: '.min' } ) )
